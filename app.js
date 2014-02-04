@@ -37,7 +37,7 @@ app.all('/token.json', function(req, res){
   "</xml>";
 
   res.setHeader('Content-Length', Buffer.byteLength(textTpl));
-
+  console.log(textTpl);
   res.end(textTpl);
 
 
